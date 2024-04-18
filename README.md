@@ -13,7 +13,7 @@ Dependencies can be found in the requirements.txt file.
 The Dockerfile and compose.yaml file is already present in the repo. To build and run the Python Docker application directly - <br />
 ```docker compose up --build``` <br />
 Go to the home page - http://127.0.0.1:6055/ 
-The above url will redirect to the - http://127.0.0.1:6055/receipts/process . We can input the JSON data in the textbox and submit it with the 'POST' request. Correct submission will result in Receipt ID response. This is the first API - process receipts call. (PS:  Save the receipts ID} <br />
+The above url will redirect to the - http://127.0.0.1:6055/receipts/process . We can input the JSON data in the textbox and submit it with the 'POST' request. Correct submission will result in Receipt ID response. This is the first API - process receipts call. (PS:  Save the receipts ID) <br />
 Next, in order to know the points, go to link - http://127.0.0.1:6055/receipts/{id}/points . In place of {id}, use the id you got as response to above request. This link will send a 'GET' request and output total points rewarded. This is the second API - get points call. <br />
 
 To stop the application - <br />
